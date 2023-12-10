@@ -11,22 +11,44 @@ import { RecipeUpdateComponent } from './components/recipes/recipe-update/recipe
 import { RecipeListComponent } from './components/recipes/recipe-list/recipe-list.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
+import { FormsModule } from '@angular/forms';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
-    UserRegisterComponent,
+
     UserLoginComponent,
     RecipeRegisterComponent,
     RecipeUpdateComponent,
     RecipeListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    UserRegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatSidenavModule,
+    MatListModule,
+    MatButtonModule,
+    MatTableModule,
+    MatIconModule,
+    MatDividerModule,
+    MatInputModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -10,9 +10,9 @@ export class AuthGuardService {
     return this.isLoggedInVar;
   }
 
-  login(username: string, password: string): boolean {
+  login(email: string, password: string): boolean {
     // Lógica de autenticação simulada
-    if (username === 'usuario' && password === 'senha') {
+    if (email === 'email' && password === 'password') {
       this.isLoggedInVar = true;
       return true;
     } else {
