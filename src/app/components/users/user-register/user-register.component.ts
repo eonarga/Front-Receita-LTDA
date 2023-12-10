@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-register',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-register.component.css']
 })
 export class UserRegisterComponent {
-
+  constructor(private router: Router) { }
+  register(): void {
+    // Lógica de registro, se necessário
+    // Se o registro for bem-sucedido, navegue para a lista de receitas
+    this.router.navigate(['/recipe-list']);
+  }
 }

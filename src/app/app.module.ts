@@ -9,6 +9,7 @@ import { UserLoginComponent } from './components/users/user-login/user-login.com
 import { RecipeRegisterComponent } from './components/recipes/recipe-register/recipe-register.component';
 import { RecipeUpdateComponent } from './components/recipes/recipe-update/recipe-update.component';
 import { RecipeListComponent } from './components/recipes/recipe-list/recipe-list.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RecipeListComponent } from './components/recipes/recipe-list/recipe-lis
     UserLoginComponent,
     RecipeRegisterComponent,
     RecipeUpdateComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
