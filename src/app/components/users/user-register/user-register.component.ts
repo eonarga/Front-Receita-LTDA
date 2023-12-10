@@ -20,7 +20,7 @@ export class UserRegisterComponent {
     // Lógica de registro, se necessário
     if (this.user.name && this.user.email && this.user.password) {
       // Recupera os Usuários existentes no
-      const storedUsersString: string | null = localStorage.getItem('user');
+      const storedUsersString: string | null = localStorage.getItem('users');
       const users: IUser[] = storedUsersString
         ? JSON.parse(storedUsersString)
         : [];
