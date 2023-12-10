@@ -1,5 +1,30 @@
-<div>
-    <h1>Receitas</h1>
-  
-    <button mat-raised-button color="primary" (click)="goToRegisterRecipe()">Adicionar Receita</button>
+<div class="list-recipe">
+  <h1>Lista de Receitas</h1>
+  <br>
+  <table *ngIf="recipes.length > 0; else noRecipes">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Ingredientes</th>
+        <th>Modo de Preparo</th>
+        <th>Imagem</th>
+      </tr>
+    </thead>
+    <br><br>
+    <tbody>
+      <tr *ngFor="let recipe of recipes">
+        <td>{{ recipe.name }}</td>
+        <td>{{ recipe.ingredients }}</td>
+        <td>{{ recipe.prepareMode }}</td>
+        <td>{{ recipe.imageUrl }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #noRecipes>
+    <p>Nenhuma receita cadastrada.</p>
+  </ng-template>
+  <br><br>
+  <button mat-raised-button color="primary" (click)="goToRegisterRecipe()">
+    Adicionar Receita
+  </button>
 </div>

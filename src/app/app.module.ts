@@ -12,26 +12,24 @@ import { RecipeListComponent } from './components/recipes/recipe-list/recipe-lis
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 import { FormsModule } from '@angular/forms';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { MatButtonModule } from '@angular/material/button';
-import { MatTableModule } from '@angular/material/table';
-import { MatIconModule } from '@angular/material/icon';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { ReactiveFormsModule } from '@angular/forms';
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatListModule } from "@angular/material/list";
+import { MatButtonModule } from "@angular/material/button";
+import { MatTableModule } from "@angular/material/table";
+import { MatIconModule } from "@angular/material/icon";
+import { MatDividerModule } from "@angular/material/divider";
+import { MatInputModule } from "@angular/material/input";
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
     AppComponent,
-
+    UserRegisterComponent,
     UserLoginComponent,
     RecipeRegisterComponent,
     RecipeUpdateComponent,
     RecipeListComponent,
-    PageNotFoundComponent,
-    UserRegisterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -45,10 +43,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatDividerModule,
     MatInputModule,
-    MatFormFieldModule,
-    ReactiveFormsModule,
+    MatFormFieldModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

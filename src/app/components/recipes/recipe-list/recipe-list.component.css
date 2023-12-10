@@ -1,0 +1,12 @@
+.list-recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    text-align: center;
+}
+
