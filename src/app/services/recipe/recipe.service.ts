@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Recipe } from 'src/app/models/recipe';
+import { IRecipe } from 'src/app/models/recipe';
 
 @Injectable({
   providedIn: 'root',
 })
 export class RecipeService {
-  private recipes: Recipe[] = [
+  private recipes: IRecipe[] = [
     { 
       id: 1,
       name: 'pudim',
@@ -16,21 +16,21 @@ export class RecipeService {
     },
   ];
 
-  getRecipes(): Observable<Recipe[]> {
+  getRecipes(): Observable<IRecipe[]> {
     return of(this.recipes);
   }
 
-  getRecipeById(id: number): Observable<Recipe | undefined> {
+  getRecipeById(id: number): Observable<IRecipe | undefined> {
     const recipe = this.recipes.find((r) => r.id === id);
     return of(recipe);
   }
 
-  addRecipe(recipe: Recipe): void {
+  addRecipe(recipe: IRecipe): void {
     // Lógica para adicionar uma nova receita ao array
     this.recipes.push(recipe);
   }
 
-  updateRecipe(recipe: Recipe): void {
+  updateRecipe(recipe: IRecipe): void {
     // Lógica para atualizar a receita no array
     const index = this.recipes.findIndex((r) => r.id === recipe.id);
     if (index !== -1) {

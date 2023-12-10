@@ -3,5 +3,5 @@ export interface IRecipe {
     name: string;
     ingredients: string;
     prepareMode: string;
-    imageUrl: string;
+    imageUrl?: string;
 }
