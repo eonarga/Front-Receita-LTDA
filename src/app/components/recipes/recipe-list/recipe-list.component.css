@@ -1,7 +1,17 @@
 .list-recipe {
     text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.title-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 table {
@@ -9,11 +19,9 @@ table {
 }
 
 h1 {
-    padding: 10px;
-    margin: 10px;
+    margin: 0; /* Remova o padding para evitar espaçamento extra */
 }
 
 button {
-    padding: 20px;
-    margin: 20px;
+    margin-top: 20px; /* Ajuste a margem para separar o botão */
 }
