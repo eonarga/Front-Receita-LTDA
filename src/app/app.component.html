@@ -1,4 +1,22 @@
 <div>
-    <router-outlet></router-outlet>
- </div>
-  
+  <div class="navbar">
+    <div class="navbar-pad">
+      <a routerLink="recipe-list">Home</a>
+    </div>
+    <nav class="navbar-items">
+      <div class="navbar-pad">
+        <a routerLink="recipe-register">Receita</a>
+      </div>
+      <div class="navbar-pad">
+        <a routerLink="user-login">Login</a>
+      </div>
+      <div class="navbar-pad">
+        <a routerLink="user-register">Cadastro</a>
+      </div>
+    </nav>
+    <nav class="navbar-items navbar-items-logout">
+      <div class="navbar-pad"><a routerLink="user-login">Sair</a></div>
+    </nav>
+  </div>
+  <router-outlet></router-outlet>
+</div>

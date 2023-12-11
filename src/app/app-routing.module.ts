@@ -16,10 +16,11 @@ const routes: Routes = [
   { path: 'recipe-register', component: RecipeRegisterComponent }, // função para proteger a rota canActivate: [AuthGuardService] },
   { path: 'recipe-update/:id', component: RecipeUpdateComponent }, // função para proteger a rota canActivate: [AuthGuardService] },
   { path: '404', component: PageNotFoundComponent, pathMatch: 'full' },
+  { path: '**', redirectTo: '404', pathMatch: 'full'},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

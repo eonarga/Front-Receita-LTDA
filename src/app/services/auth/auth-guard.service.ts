@@ -9,22 +9,6 @@ export class AuthGuardService {
   private users: IUser[] = [];
   private isLoggedInVar = false;
 
-  register(user: IUser): Observable<boolean> {
-    // Simula um backend que retorna um Observable
-    const isEmailUnique = !this.users.some((u) => u.email === user.email);
-    if (isEmailUnique) {
-      // Gera um ID único (pode ser mais robusto em uma aplicação real)
-      user.id = this.users.length + 1;
-
-      // Adiciona o novo usuário ao array
-      this.users.push(user);
-
-      return of(true); // Registro bem-sucedido
-    } else {
-      return of(false); // Email já registrado
-    }
-  }
-
   isLoggedIn(): boolean {
     return this.isLoggedInVar;
   }
