@@ -1,0 +1,35 @@
+<div class="form-recipe">
+  <h2>Cadastrar Receita</h2>
+
+  <form (submit)="onSubmit()">
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="recipe.name" name="name" required />
+        <mat-hint>*campo obrigatório</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Ingredientes</mat-label>
+        <input matInput [(ngModel)]="recipe.ingredients" name="ingredients" required />
+        <mat-hint>*campo obrigatório</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Modo de preparo</mat-label>
+        <textarea matInput [(ngModel)]="recipe.prepareMode" name="prepareMode" required></textarea>
+        <mat-hint>*campo obrigatório</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Imagem</mat-label>
+        <input matInput [(ngModel)]="recipe.imageUrl" name="imageUrl" />
+      </mat-form-field>
+    </p>
+
+    <button mat-raised-button color="primary" type="submit">Cadastrar Receita</button>
+  </form>
+</div>

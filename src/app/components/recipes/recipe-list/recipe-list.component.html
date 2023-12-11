@@ -1,0 +1,43 @@
+<div class="list-recipe">
+  <h1>Lista de Receitas</h1>
+  <br /><!-- 
+  <mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Pudim" #input>
+  </mat-form-field> -->
+  <table
+    mat-table
+    [dataSource]="dataSource"
+    class="mat-elevation-z8"
+  >
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Nome</th>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="ingredients">
+      <th mat-header-cell *matHeaderCellDef>Ingredientes</th>
+      <td mat-cell *matCellDef="let element">{{ element.ingredients }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="prepareMode">
+      <th mat-header-cell *matHeaderCellDef>Modo de Preparo</th>
+      <td mat-cell *matCellDef="let element">{{ element.prepareMode }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="imageUrl">
+      <th mat-header-cell *matHeaderCellDef>Imagen</th>
+      <td mat-cell *matCellDef="let element">{{ element.imageUrl }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+<!--    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">Nenhuma receita encontrada."{{input.value}}"</td>
+    </tr> -->
+  </table>
+  <br /><br />
+  <button mat-raised-button color="primary" (click)="goToRegisterRecipe()">
+    Adicionar Receita
+  </button>
+</div>

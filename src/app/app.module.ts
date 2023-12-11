@@ -6,9 +6,20 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserRegisterComponent } from './components/users/user-register/user-register.component';
 import { UserLoginComponent } from './components/users/user-login/user-login.component';
-import { RecipeRegisterComponent } from './components/recipes/recipes/recipe-register/recipe-register.component';
-import { RecipeUpdateComponent } from './components/recipes/recipes/recipe-update/recipe-update.component';
-import { RecipeListComponent } from './components/recipes/recipes/recipe-list/recipe-list.component';
+import { RecipeRegisterComponent } from './components/recipes/recipe-register/recipe-register.component';
+import { RecipeUpdateComponent } from './components/recipes/recipe-update/recipe-update.component';
+import { RecipeListComponent } from './components/recipes/recipe-list/recipe-list.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+
+import { FormsModule } from '@angular/forms';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule, MatTableDataSource } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -17,14 +28,25 @@ import { RecipeListComponent } from './components/recipes/recipes/recipe-list/re
     UserLoginComponent,
     RecipeRegisterComponent,
     RecipeUpdateComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatSidenavModule,
+    MatListModule,
+    MatButtonModule,
+    MatTableModule,
+//    MatTableDataSource,
+    MatIconModule,
+    MatDividerModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

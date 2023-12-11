@@ -1,1 +1,24 @@
-<p>user-register works!</p>
+<div class="container">
+  <h2>Cadastrar Usuário</h2>
+  <form (ngSubmit)="register()">
+    <mat-form-field appearence="fill">
+      <mat-label>Nome:</mat-label>
+      <input matInput type="text" id="name" [(ngModel)]="user.name" name="name" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email:</mat-label>
+      <input matInput type="email" id="email" [(ngModel)]="user.email" name="email" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Senha:</mat-label>
+      <input matInput type="password" id="password" [(ngModel)]="user.password" name="password" required>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="register()">Cadastrar</button>
+
+    <p>Já tem uma conta? <a routerLink="/user-login">Faça o login</a></p>
+
+  </form>
+</div>
