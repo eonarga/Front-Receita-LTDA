@@ -1,6 +1,8 @@
 #Alunos
-https://avatars.githubusercontent.com/u/69332675?v=4
- - Gabriel Lucas https://github.com/gabrielgt5 
+
+## Gabriel Lucas
+- GitHub: [gabrielgt5](https://github.com/gabrielgt5)
+- Avatar: ![Avatar de Gabriel Lucas](https://avatars.githubusercontent.com/u/69332675?v=4)
 
 # 🍲 ApiRecipesAngular
 
