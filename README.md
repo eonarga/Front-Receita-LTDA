@@ -1,4 +1,5 @@
 #Alunos
+https://avatars.githubusercontent.com/u/69332675?v=4
  - Gabriel Lucas https://github.com/gabrielgt5 
 
 # 🍲 ApiRecipesAngular
