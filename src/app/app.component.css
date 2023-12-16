@@ -1,12 +1,24 @@
 .navbar {
-    background-color: #3f51b5;
+    background-color: #EFEEEB;
     display: flex;
     padding: 16px;
-    color: #fff;
+    align-items: center;
+    color: #E45700;
   }
-  
+  .logo{
+   width: 12rem;
+  }
   .navbar-pad {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     padding-right: 40px;
+  }
+  .navbar-out {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+   
   }
   
   .navbar-items {
@@ -34,5 +46,5 @@
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: #E45700;
   }

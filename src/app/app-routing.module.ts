@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UserLoginComponent } from './components/users/user-login/user-login.component';
-import { UserRegisterComponent } from './components/users/user-register/user-register.component';
-import { RecipeListComponent } from './components/recipes/recipe-list/recipe-list.component';
-import { RecipeRegisterComponent } from './components/recipes/recipe-register/recipe-register.component';
-import { RecipeUpdateComponent } from './components/recipes/recipe-update/recipe-update.component';
+import { UserLoginComponent } from './components/users/userLogin/user-login.component';
+import { UserRegisterComponent } from './components/users/userRegister/user-register.component';
+import { RecipeListComponent } from './components/recipes/recipeList/recipe-list.component';
+import { RecipeRegisterComponent } from './components/recipes/recipeRegister/recipe-register.component';
+import { RecipeUpdateComponent } from './components/recipes/recipeUpdate/recipe-update.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 // import { AuthGuardService } from './services/auth/auth-guard.service';
 

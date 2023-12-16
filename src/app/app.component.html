@@ -1,21 +1,35 @@
 <div>
   <div class="navbar">
     <div class="navbar-pad">
+      <a routerLink="recipe-list"><img class="logo" src="../assets/Receita Ltda.svg" alt="rlogo receita ltda"></a>
+    </div>
+    <div class="navbar-pad">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+
       <a routerLink="recipe-list">Home</a>
     </div>
     <nav class="navbar-items">
       <div class="navbar-pad">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="summarize"></mat-icon>
+
         <a routerLink="recipe-register">Receita</a>
       </div>
+
+    </nav>
+    <nav class="navbar-items navbar-items-logout">
       <div class="navbar-pad">
+      
+
         <a routerLink="user-login">Login</a>
       </div>
       <div class="navbar-pad">
         <a routerLink="user-register">Cadastro</a>
       </div>
-    </nav>
-    <nav class="navbar-items navbar-items-logout">
-      <div class="navbar-pad"><a routerLink="user-login">Sair</a></div>
+      <div class="navbar-out">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="logout"></mat-icon>
+        <div class="navbar-pad"><a routerLink="user-login">Sair</a></div>
+      </div>
+
     </nav>
   </div>
   <router-outlet></router-outlet>

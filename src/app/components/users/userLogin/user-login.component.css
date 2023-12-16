@@ -1,0 +1,25 @@
+
+.img{
+  width: auto;
+
+}
+.user-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 6rem;
+  padding: auto;
+}
+
+.sectionForm{
+
+padding: 4.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
