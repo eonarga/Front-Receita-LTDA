@@ -1,3 +1,6 @@
+#Alunos
+ - Gabriel Lucas https://github.com/gabrielgt5 
+
 # 🍲 ApiRecipesAngular
 
 Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) na versão 16.2.0.
