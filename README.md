@@ -3,8 +3,12 @@
 
 <img src="https://avatars.githubusercontent.com/u/69332675?v=4" alt="Avatar de Gabriel Lucas" width="50" />
 Gabriel Lucas - GitHub: [gabrielgt5](https://github.com/gabrielgt5)
-<img src="https://avatars.githubusercontent.com/u/111389681?v=4" alt="Avatar de Tharlis David" width="50" />
+
+<img src="https://avatars.githubusercontent.com/u/111389681?v=4" alt="Avatar de Tharlis" width="50" />
 Tharlis David - GitHub: [tharlisdavid](https://github.com/tharlisdavid)
+
+<img src="https://avatars.githubusercontent.com/u/111381502?v=4" alt="Avatar de Assis" width="50" />
+Francisco de Assis - GitHub: [eonarga](https://github.com/eonarga)
 
 
 # 🍲 ApiRecipesAngular
