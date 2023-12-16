@@ -1,7 +1,7 @@
 
 # Alunos
 
-<img src="https://avatars.githubusercontent.com/u/69332675?v=4" alt="Avatar de Gabriel Lucas" width="50" borde-radius="8"/>
+<img src="https://avatars.githubusercontent.com/u/69332675?v=4" alt="Avatar de Gabriel Lucas" width="50" />
 ### Gabriel Lucas
 - GitHub: [gabrielgt5](https://github.com/gabrielgt5)
 
